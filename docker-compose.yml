@@ -1,10 +1,9 @@
-version: '3.3'
+version: '2.4'
 services:
-  snake:
+  apache:
     image: 'hancooj/real-estate-cweb2140:latest'
-    environment:
-      - "PORT:3000"
+    container_name: real-estate-1
     ports:
-      - "80:3000"
+      - "80:80"
     volumes:
       - .:/usr/local/apache2/htdocs
